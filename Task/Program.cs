@@ -4,10 +4,10 @@ int n = 4;
 Console.WriteLine($"В изначальном массиве {n} элементов");
 
 string[] array = new string[n];
-array[0] = "hello";
-array[1] = "2";
-array[2] = "world";
-array[3] = ":-)";
+array[0] = "1234";
+array[1] = "1567";
+array[2] = "-2";
+array[3] = "computer science";
 
 void PrintArray(string[] array)
 {
