@@ -19,3 +19,30 @@ void PrintArray(string[] array)
 
 Console.WriteLine($"Изначальный массив:");
 PrintArray(array);
+
+string[] arrayLessThanThree(string[] array)
+{
+    int lengthNewArray = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3) lengthNewArray++;
+    }
+
+    string[] newArray = new string[lengthNewArray];
+
+    int index = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            newArray[index] = array[i];
+            index++;
+        }
+    }
+    return newArray;
+
+}
+
+Console.WriteLine();
+Console.WriteLine($"Новый массив:");
+PrintArray(arrayLessThanThree(array));
